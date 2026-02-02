@@ -20,6 +20,9 @@
 # production
 /build
 
+# contact form submissions (saved as text files)
+/contacts
+
 # misc
 .DS_Store
 *.pem

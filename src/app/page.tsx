@@ -226,7 +226,7 @@ export default function Home() {
               <Link href="/privacy.html" className="transition hover:text-orange-600">
                 Chính sách
               </Link>
-              <Link href="mailto:info@enetty.com" className="transition hover:text-orange-600">
+              <Link href="/contact" className="transition hover:text-orange-600">
                 Liên hệ
               </Link>
             </div>
