@@ -188,17 +188,19 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="#"
+              href="https://apps.apple.com/us/app/so-tay-nau-an/id6758554557"
+              target="_blank"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-orange-600 shadow-lg transition hover:bg-orange-50 sm:w-auto"
             >
-              <span className="text-2xl">🍎</span>
+              <span className="text-2xl"><Image src="/apple.png" alt="App Store" width={20} height={20} /></span>
               Tải trên App Store
             </a>
             <a
-              href="#"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-white/80 bg-transparent px-8 py-4 text-lg font-semibold text-white transition hover:bg-white/10 sm:w-auto"
+              href="https://play.google.com/store/apps/details?id=com.enetty.cooknote"
+              target="_blank"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-semibold text-orange-600 shadow-lg transition hover:bg-orange-50 sm:w-auto"
             >
-              <span className="text-2xl">🤖</span>
+              <span className="text-2xl"><Image src="/play.png" alt="Google Play" width={20} height={20} /></span>
               Tải trên Google Play
             </a>
           </div>
