@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { homePageFaviconMetadata } from "@/lib/home-metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sổ tay nấu ăn - Lưu công thức, nấu ngon mỗi ngày",
-  description:
-    "Ứng dụng sổ tay nấu ăn giúp bạn lưu công thức, lên thực đơn và nấu ăn dễ dàng hơn.",
+  title: "Enetty - Ứng dụng hữu ích cho cuộc sống hàng ngày",
+  description: "Enetty — ứng dụng di động hữu ích cho cuộc sống hàng ngày.",
+  ...homePageFaviconMetadata,
 };
 
 export default function RootLayout({
@@ -25,14 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
-    </html >
+    </html>
   );
 }

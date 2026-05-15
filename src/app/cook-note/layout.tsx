@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { cookNoteFaviconMetadata } from "@/lib/cook-note-metadata";
 
 export const metadata: Metadata = {
-  title: "Liên hệ - Sổ tay nấu ăn",
+  title: "Sổ tay nấu ăn - Lưu công thức, nấu ngon mỗi ngày",
   description:
-    "Liên hệ với đội ngũ Sổ tay nấu ăn. Chúng tôi sẽ phản hồi sớm nhất có thể.",
+    "Ứng dụng sổ tay nấu ăn giúp bạn lưu công thức, lên thực đơn và nấu ăn dễ dàng hơn.",
   ...cookNoteFaviconMetadata,
 };
 
-export default function ContactLayout({
+export default function CookNoteLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

@@ -76,20 +76,21 @@ export default function ContactPage() {
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-amber-200/60 bg-amber-50/95 backdrop-blur-sm">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <Link
-            href="/"
+            href="/cook-note"
             className="flex items-center gap-2 text-xl font-bold tracking-tight text-stone-800 transition hover:text-orange-600"
           >
             <Image
-              src="/logo.png"
+              src="/cook-note/logo.png"
               alt="Sổ tay nấu ăn"
-              width={30}
-              height={30}
+              width={36}
+              height={36}
+              className="rounded-lg"
             />
             <span>Sổ tay nấu ăn</span>
           </Link>
           <div className="flex items-center gap-4">
             <Link
-              href="/"
+              href="/cook-note"
               className="text-sm font-medium text-stone-600 transition hover:text-orange-600"
             >
               Về trang chủ
