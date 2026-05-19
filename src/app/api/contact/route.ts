@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { products } from "@/app/constant/products";
 
 type ResponseData = {
   message: string;
@@ -10,6 +11,7 @@ type ResponseData = {
 type ContactFormData = {
   fullName: string;
   email: string;
+  productId?: string;
   message: string;
 };
 
@@ -17,7 +19,12 @@ export async function POST(request: NextRequest) {
   // Only allow POST requests (GET etc. will 405 by default if not exported)
   try {
     const body = (await request.json()) as ContactFormData;
-    const { fullName, email, message } = body;
+    const { fullName, email, productId, message } = body;
+
+    const productName =
+      productId && products.some((p) => p.id === productId)
+        ? products.find((p) => p.id === productId)!.name
+        : null;
 
     // Validate required fields
     if (!fullName || !email || !message) {
@@ -71,6 +78,7 @@ CONTACT INFORMATION
 
 Full Name: ${fullName}
 Email: ${email}
+Product: ${productName ?? productId ?? "—"}
 
 -------------------------------------------
 MESSAGE

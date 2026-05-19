@@ -261,7 +261,7 @@ export default function SweetHitPage() {
               <Link href="/sweet-hit/privacy.html" className="transition hover:text-pink-600">
                 Chính sách
               </Link>
-              <Link href="/contact" className="transition hover:text-pink-600">
+              <Link href="/contact?product=sweet-hit" className="transition hover:text-pink-600">
                 Liên hệ
               </Link>
             </div>

@@ -228,7 +228,7 @@ export default function CookNotePage() {
               <Link href="/cook-note/privacy.html" className="transition hover:text-orange-600">
                 Chính sách
               </Link>
-              <Link href="/contact" className="transition hover:text-orange-600">
+              <Link href="/contact?product=cook-note" className="transition hover:text-orange-600">
                 Liên hệ
               </Link>
             </div>
