@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const sweetHitIcons: NonNullable<Metadata["icons"]> = {
   icon: [
     {
-      url: "/sweet-hit/favicon/favicon.ico",
+      url: "/sweet-hit/favicon.ico",
       sizes: "any",
     },
     {
