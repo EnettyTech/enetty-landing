@@ -17,6 +17,16 @@ export const products = [
       href: "/sweet-hit",
       icon: "/sweet-hit/logo.png",
       accent: "from-pink-400 to-sky-300",
-      badge: "Sắp ra mắt",
+      badge: "Đang phát hành",
+    },
+    {
+      id: "hydration-tracker",
+      name: "Tracker nước uống",
+      description:
+        "Theo dõi lượng nước uống hàng ngày và đạt mục tiêu — ứng dụng dành cho những người muốn giữ dáng và khỏe mạnh.",
+      href: "https://www.hydroplan.fun",
+      icon: "/hydration-tracker/logo.png",
+      accent: "from-blue-500 to-cyan-500",
+      badge: "Đang phát hành",
     },
   ];

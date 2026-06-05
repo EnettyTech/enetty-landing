@@ -162,14 +162,14 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-14 grid gap-8 sm:grid-cols-2">
+          <div className="mt-14 grid gap-4 sm:grid-cols-2">
             {products.map((product) => (
               <Link
                 key={product.name}
                 href={product.href}
                 className="group relative overflow-hidden rounded-2xl border border-stone-200 bg-white p-8 shadow-sm transition hover:border-indigo-200 hover:shadow-lg"
               >
-                <span className="inline-block rounded-full bg-stone-100 px-3 py-1 text-xs font-medium text-stone-600">
+                <span className="inline-block rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-600">
                   {product.badge}
                 </span>
                 <div className={`mt-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${product.accent} text-3xl shadow-md`}>

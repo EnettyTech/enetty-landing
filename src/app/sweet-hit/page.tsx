@@ -216,24 +216,24 @@ export default function SweetHitPage() {
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="#"
+              href="https://apps.apple.com/vn/app/sweet-hit-cake-challenge/id6770778692"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-pink-600 shadow-lg transition hover:bg-pink-50 sm:w-auto"
-              aria-label="Tải trên App Store — sắp ra mắt"
+              aria-label="Tải trên App Store — đang phát hành"
             >
               <Image src="/apple.png" alt="" width={20} height={20} />
               App Store
             </a>
             <a
-              href="#"
+              href="https://play.google.com/store/apps/details?id=store.enetty.sweethit"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-sky-600 shadow-lg transition hover:bg-sky-50 sm:w-auto"
-              aria-label="Tải trên Google Play — sắp ra mắt"
+              aria-label="Tải trên Google Play — đang phát hành"
             >
               <Image src="/play.png" alt="" width={20} height={20} />
               Google Play
             </a>
           </div>
           <p className="mt-6 text-sm font-medium text-white/90">
-            🍭 Sắp có mặt trên cửa hàng ứng dụng
+            🍭 Đang phát hành trên cửa hàng ứng dụng
           </p>
         </div>
       </section>
